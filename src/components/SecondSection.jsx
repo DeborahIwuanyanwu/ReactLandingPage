@@ -5,7 +5,7 @@ const SecondSection = () =>{
   return(
     <>
       <Container >
-      <SecondSectionContents />
+      <SecondSectionContents bg5="#f2e6ee"/>
       <SecondSectionContents />
       <SecondSectionContents bg= "#473c83" bg2="#b37ff4" bg3="#f2e6ee" bg4="#f2e6ee"/>
       <SecondSectionContents />

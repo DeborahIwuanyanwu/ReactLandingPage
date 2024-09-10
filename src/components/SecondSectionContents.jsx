@@ -27,18 +27,16 @@ const ContainerHolder = styled.div`
   width: 83%;
   margin-top: 30px;
   padding-bottom: 30px;
-  background-color: chartreuse;
   gap: 10px;
   display: flex; 
   justify-content: center;
-  /* align-items: center; */
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 `;
 const FirstCard = styled.div`
   width: 260px;
   height: 260px;
   background: #f2e6ee;
-  background-color: ${({ bg2 }) => bg2};
+  background-color: ${({ bg2 }) => bg2}; 
   border-radius: 8px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   display: flex;
@@ -56,8 +54,9 @@ const InnerCardHolder = styled.div`
 const Circle = styled.div`
   width: 48px;
   height: 48px;
-  border-radius: 50px;
-  background-color: ${({ bg }) => bg} ;
+  border-radius: 50px; 
+  background-color: #f59ad2;
+  background-color: ${({ bg }) => bg} ; 
 `;
 const BigText = styled.div`
   font-size: 22px;
