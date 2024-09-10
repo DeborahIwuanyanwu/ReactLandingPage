@@ -25,6 +25,8 @@ export default SecondSectionContents;
 
 const ContainerHolder = styled.div`
   width: 83%;
+  margin-top: 30px;
+  padding-bottom: 30px;
   background-color: chartreuse;
   gap: 10px;
   display: flex; 
