@@ -24,17 +24,25 @@ const SecondSectionContents = ({bg, bg2, bg3, bg4}) => {
 export default SecondSectionContents;
 
 const ContainerHolder = styled.div`
-  width: 83%;
-  margin-top: 30px;
-  padding-bottom: 20px;
-  gap: 10px;
   display: flex; 
   justify-content: center;
-  flex-wrap: wrap;
+  margin: 5px;
+
+  
+  @media  (max-width:768px){
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    /* align-items: center;
+    justify-content: center; */
+  }
+
 `;
 const FirstCard = styled.div`
-  width: 260px;
-  height: 260px;
+  width: 328px;
+  height: 300px;
   background: #f2e6ee;
   background-color: ${({ bg2 }) => bg2}; 
   border-radius: 8px;
@@ -42,6 +50,15 @@ const FirstCard = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  
+  @media  (max-width:768px){
+    width: 320px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+  }
+
 `;
 const InnerCardHolder = styled.div`
   width: 90%;

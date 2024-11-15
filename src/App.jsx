@@ -1,31 +1,23 @@
-import styled from "@emotion/styled";
+// import styled from "@emotion/styled";
 import Header from "./components/Header";
-import FirstSection from "./components/FirstSection";
-import SecondSection from "./components/SecondSection";
-import ThirdSection from "./components/ThirdSection";
-import Footer from "./components/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import LandingPage from "./components/LandingPage";
+import Contact from "./components/Contact";
+import Services from "./components/Services";
 
 const App = () => {
   return (
     <>
-      <LandingPage >
-      <Header />
-      <FirstSection />
-      <SecondSection />
-      <ThirdSection />
-      <Footer />
-      </LandingPage >
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Services" element={<Services />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };
 
 export default App;
-
-const LandingPage = styled.body`
-  width: 100%;
-  background-color: #f3f1f2;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-`;

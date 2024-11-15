@@ -21,9 +21,11 @@ export default SecondSection;
 const Container = styled.div`
   width: 100%;
   background-color: #f3f1f2;
+  margin-top: 30px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 `;
 

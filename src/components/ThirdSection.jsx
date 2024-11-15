@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-
+import image from "../assets/illustration-2.svg"
 const ThirdSection = () => {
   return (
     <Container>
@@ -49,7 +49,7 @@ const ThirdSection = () => {
           </LeftSideHolder>
         </LeftSide>
         <RightSide>
-            <RightUp></RightUp>
+            <RightUp><img src={image}/></RightUp>
             <RightDown>
                 <ContentHold>
                     <FirstHolder>
@@ -82,6 +82,11 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media  (max-width:768px){
+        width: 100%; 
+        height: auto;
+    }
 `;
 const ContainerHolder = styled.div`
   width: 83%;
@@ -92,6 +97,12 @@ const ContainerHolder = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media  (max-width:768px){
+        width:90%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 `;
 const LeftSide = styled.div`
   width: 50%;
@@ -99,6 +110,11 @@ const LeftSide = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  
+  @media (max-width: 768px){
+    display: flex;
+    width: 100%;
+  }
 `;
 const LeftSideHolder = styled.div`
   width: 100%; 
@@ -107,21 +123,50 @@ const LeftSideHolder = styled.div`
   display: flex;
   flex-direction: column;
   /* align-items: center; */
+
+  @media  (max-width:768px){
+    width: 100%;
+  }
+  
 `;
 const LeftTexts = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+
+  @media  (max-width:768px){
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 const SmallText = styled.div`
   font-size: 14px;
   color: #f3a0d0;
   font-weight: bold;
+
+  @media  (max-width:768px){
+    width: 100%;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 const BigText = styled.div`
   font-size: 40px;
   font-weight: bold;
   color: #473c83;
+
+  @media  (max-width:768px){
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 45px;
+  }
 `;
 const ContentHolder = styled.div`
 width: 440px;
@@ -129,11 +174,20 @@ width: 440px;
   justify-content: center;
   gap: 20px;
   flex-direction: column;
+
+  @media  (max-width:768px){
+    width: 100%;
+  }
 `;
 const First = styled.div`
   display: flex;
   gap: 15px;
-  /* align-items: center; */
+
+  
+  @media  (max-width:768px){
+    display: flex;
+  }
+
 `;
 const Circle = styled.div`
   width: 54px;
@@ -145,6 +199,11 @@ const Circle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media  (max-width:768px){
+    width: 56px;
+    height: 37px;
+  }
 `;
 
 const Circle2 = styled.div`
@@ -157,6 +216,11 @@ const Circle2 = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media  (max-width:768px){
+    width: 50px;
+    height: 37px;
+  }
 `;
 
 const Circle3 = styled.div`
@@ -169,6 +233,11 @@ const Circle3 = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media  (max-width:768px){
+    width: 45px;
+    height: 37px;
+  }
 `;
 const Texts = styled.div`
   display: flex;
@@ -191,33 +260,71 @@ const RightSide = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: flex-end;
+
+  @media  (max-width:768px){
+    width: 100%;
+    height: auto;
+  }
 `;
 const RightUp = styled.div`
     width: 100%;
-    height: 300px;
-    background-color: #bebcae;
+    height:330px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @media  (max-width:768px){
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+    img{
+      width: 90%;
+      height: 300px;
+
+      @media (max-width: 768px){
+        width: 80%;
+        height: 400px;
+      }
+    }
 `
 const RightDown = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
+
+    @media  (max-width:768px){
+    width: 100%;
+  }
 `
 const ContentHold = styled.div`
-width: 400px;
+width: 500px;
      display: flex;
   justify-content: center;
   gap: 20px;
   flex-direction: column;
+
+  @media  (max-width:768px){
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
 `
 const FirstHolder =  styled.div`
     display: flex;
     gap: 15px;
+    @media  (max-width:768px){
+    width: 100%;
     
+  }
 `
 const Circle4 = styled.div`
-    width: 50px;
-    height: 32px;
+    width: 41px;
+    height: 33px;
     border-radius: 50px;
     border: 1px solid #473c83;
   font-size: 16px;
@@ -225,6 +332,11 @@ const Circle4 = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media  (max-width:768px){
+    width: 40px;
+    height: 37px;
+  }
 `
 const SecondHolder = styled.div`
         display: flex;
@@ -232,10 +344,18 @@ const SecondHolder = styled.div`
     display: flex;
     justify-content: center;
     /* align-items: center; */
+
+    
+    @media  (max-width:768px){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
     `
 const Circle5 = styled.div`
-    width: 39px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     border-radius: 50px;
     border: 1px solid #473c83;
   font-size: 16px;
@@ -243,16 +363,32 @@ const Circle5 = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media  (max-width:768px){
+    width: 40px;
+    height: 36px;
+  }
 `
 const RightTexts = styled.div`
       display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media  (max-width:768px){
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+  }
 `
 const FirstText = styled.div`
     font-size: 19px;
   font-weight: bold;
   color: #473c83;
+
+  @media  (max-width:768px){
+    width: 100%;
+  }
 `
 const UnderText = styled.div`
     font-size: 16px;

@@ -78,6 +78,10 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
 `
 const ContainerHolder = styled.div`
     width: 83%; 
@@ -85,19 +89,44 @@ const ContainerHolder = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    @media (max-width: 768px) {
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
 `
 const FirstHolder = styled.div`
     display: flex;
     flex-direction: column;
+
+    @media  (max-width:768px){
+        width: 100%;
+    }
 `
 const LogoHolder = styled.div`
     width: 60px;
 display: flex;
 align-items: center;
+
+@media  (max-width:768px){
+    width: 100%;
+        display: flex;
+        align-items: center;
+    }
 `
 const Logo = styled.h3`
   font-size: 25px;
   color: white;
+
+  @media  (max-width:768px){
+       font-size: 25px;
+    }
 `
 const FirstTexts = styled.div`
 width: 300px;
@@ -107,11 +136,20 @@ padding-top: 15px;
     font-size: 16px;
     align-items: flex-start;
     color: white;
+
+    @media  (max-width:768px){
+        width: 400px;
+        font-size: 17px;
+    }
 `
 const Circles = styled.div`
     display: flex;
     gap: 10px;
     padding-top: 15px;
+
+    @media  (max-width:768px){
+        width: 100%;
+    }
 `
 const FirstCircle = styled.div`
     width: 30px;
@@ -124,18 +162,32 @@ const FirstCircle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media  (max-width:768px){
+        width: 40px;
+        height: 40px;
+
+    }
 `
 const MiddleHolder = styled.div`
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: center; 
+
+    @media  (max-width:768px){
+        width: 100%;
+    }
 `
 const BigText = styled.div`
     display: flex;
     font-size: 18px;
     font-weight: bold;
     color: white;
+
+    @media  (max-width:768px){
+        font-size: 21px;
+    }
 `
 const SmallText = styled.div`
     display: flex;
@@ -143,11 +195,19 @@ const SmallText = styled.div`
     gap: 10px;
     justify-content: center;
     flex-direction: column;
+
+    @media  (max-width:768px){
+        width: 100%;
+    }
 `
 const About = styled.div`
     font-size: 14px;
     display: flex;
     color: white;
+
+    @media  (max-width:768px){
+        font-size: 17px;
+    }
 `
 const ThirdHolder = styled.div`
   display: flex;
@@ -157,16 +217,28 @@ const ThirdHolder = styled.div`
 `
 const LastHolder = styled.div`
     display: flex;
-    margin-top: 23px;
+    margin-top: 25px;
     flex-direction: column;
     justify-content: center;
     /* align-items: flex-start; */
+
+    @media  (max-width:768px){
+        width: 100%;
+        margin-top: 0px;
+        display: flex;
+    }
 `
 const ContactsDetails = styled.div`
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: center;
     gap: 15px;
+
+    @media  (max-width:768px){
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
 `
 const PhoneAndTexts = styled.div`
     display: flex;
@@ -189,6 +261,10 @@ const Number = styled.div`
     justify-content: center;
     font-size: 14px;
     color: white;
+
+    @media  (max-width:768px){
+      font-size: 17px;
+    }
 `
 const MailAndTexts = styled.div`
     display: flex;
